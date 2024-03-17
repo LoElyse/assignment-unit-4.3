@@ -3,6 +3,62 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 
+let basket = [];
+
+function addItem(item) {
+   basket.push(item);
+   return true;
+}
+console.log('added item', true);
+
+addItem("apples");
+
+basket = ['mango', 'strawberries', 'pineapple'];
+
+function listItems() {
+  for (i = 0; i < basket.length; i++) {
+  console.log('item in basket', basket[i]);
+}
+
+}
+listItems();
+
+
+function empty(basket) {
+    while (basket.length > 0) {
+        basket.pop();
+    }
+}
+
+empty(basket);
+
+console.log('emptied basket:', basket);
+
+// Stretch Goals
+
+
+// const maxItems = 5;
+
+// function isFull() {
+//     if (basket.length < maxItems) {
+//         return false;
+//     } else (basket.length >= maxItems); {
+//         return true;
+//     } 
+// }
+
+// console.log('checking basket', isFull());
+
+
+
+
+
+
+
+
+
+
+
 
 
 
